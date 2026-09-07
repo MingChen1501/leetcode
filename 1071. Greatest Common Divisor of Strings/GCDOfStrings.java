@@ -48,10 +48,10 @@ public class GCDOfStrings {
     /**
      * recursive
      * Time complexity: O(n + m), where n is the length of str1 and m is the length of str2.
-     * Space complexity: O(n + m), where n is the length of str1 and m is the length of str2.
+     * Space complexity: O(n + m) + O(log(min(n, m)), where n is the length of str1 and m is the length of str2. The O(log(min(n, m))) term comes from the recursive call stack.
      * loop
      * Time complexity: O(n + m), where n is the length of str1 and m is the length of str2.
-     * Space complexity: O(1)
+     * Space complexity: O(n + m), where n is the length of str1 and m is the length of str2.
      * why loop is better than recursive: The loop version has a lower space complexity because it does not use the call stack for recursion, making it more efficient in terms of memory usage.
      */
 }
